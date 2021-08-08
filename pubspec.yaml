@@ -1,0 +1,44 @@
+name: opensphereweb
+description: OpenSphere Website.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  build_runner: ^2.1.0
+  build_web_compilers: ^3.0.0
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  get_it: ^7.2.0
+  provider: ^5.0.0
+  responsive_builder: ^0.4.1
+  url_launcher: ^6.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/logo_white.png
+    - assets/development.jpeg
+    - assets/consulting.jpeg
+    - assets/profilbild.jpeg
+    - assets/sphere.jpeg
+
+  fonts:
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
