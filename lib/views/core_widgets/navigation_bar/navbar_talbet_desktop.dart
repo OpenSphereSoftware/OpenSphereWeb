@@ -6,14 +6,14 @@ import 'package:opensphereweb/views/core_widgets/navigation_bar/navbar_logo.dart
 class NavBarTabletDesktop extends StatefulWidget {
   final double opacity;
 
-  NavBarTabletDesktop(this.opacity);
+  const NavBarTabletDesktop(this.opacity);
 
   @override
   _NavBarTabletDesktopState createState() => _NavBarTabletDesktopState();
 }
 
 class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
-  final List _isHovering = [
+  final List<bool> _isHovering = [
     false,
     false,
     false,
@@ -26,7 +26,7 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
 
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
+    final screenSize = MediaQuery.of(context).size;
 
     return PreferredSize(
       preferredSize: Size(screenSize.width, 1000),
@@ -34,12 +34,11 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
         color:
             Theme.of(context).appBarTheme.color!.withOpacity(widget.opacity),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 70),
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 70),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              NavBarLogo(),
+             const NavBarLogo(),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
@@ -53,11 +52,11 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        NavBarItem(
+                       const NavBarItem(
                           title: 'Kontakt',
                           navigationPath: ContactRoute,
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Visibility(
                           maintainAnimation: true,
                           maintainState: true,
@@ -72,7 +71,7 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 60,
                   ),
                   InkWell(
@@ -85,11 +84,11 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        NavBarItem(
+                       const  NavBarItem(
                           title: 'Impressum',
                           navigationPath: ImprintRoute,
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Visibility(
                           maintainAnimation: true,
                           maintainState: true,

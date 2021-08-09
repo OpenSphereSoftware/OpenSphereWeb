@@ -7,7 +7,7 @@ class DienstleistungImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(minHeight: 600),
+      constraints: const BoxConstraints(minHeight: 600),
       child: ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Image.asset(

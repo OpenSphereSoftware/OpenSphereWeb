@@ -4,7 +4,6 @@ import 'package:opensphereweb/routing/route_names.dart';
 import 'package:opensphereweb/routing/router.dart';
 import 'package:opensphereweb/services/navigation_service.dart';
 import 'package:opensphereweb/views/home/home_view.dart';
-import 'package:opensphereweb/views/layout_template/layout_template.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';

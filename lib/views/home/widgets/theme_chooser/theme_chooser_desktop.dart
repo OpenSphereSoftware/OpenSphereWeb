@@ -11,10 +11,9 @@ class ThemeChooserDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        ThemeAnimated(),
-        SizedBox(
+        const ThemeAnimated(),
+        const SizedBox(
           height: 40,
         ),
         Text(
@@ -28,7 +27,7 @@ class ThemeChooserDesktop extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
         Text(
@@ -41,10 +40,10 @@ class ThemeChooserDesktop extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
+        const SizedBox(
           height: 40,
         ),
-        ThemeSwitcher()
+        const ThemeSwitcher()
       ],
     );
   }

@@ -2,19 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class DienstleistungBeschreibung extends StatelessWidget {
-  
-    final String title;
+  final String title;
   final String subtitle;
   final String text;
-  const DienstleistungBeschreibung({ Key? key, required this.title,required this.subtitle,required this.text }) : super(key: key);
+  const DienstleistungBeschreibung(
+      {Key? key,
+      required this.title,
+      required this.subtitle,
+      required this.text})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
     return Container(
-      constraints: BoxConstraints(maxWidth: 1000),
+      constraints: const BoxConstraints(maxWidth: 1000),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
@@ -26,7 +29,7 @@ class DienstleistungBeschreibung extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Text(
@@ -37,7 +40,7 @@ class DienstleistungBeschreibung extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Text(

@@ -10,24 +10,22 @@ class OpenSphereVorstellung extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, sizingInformation) {
-      var textAlignment =
+      final textAlignment =
           sizingInformation.isDesktop ? TextAlign.left : TextAlign.center;
-      double titleSize = sizingInformation.isMobile ? 35 : 60;
-      double descriptionSize = sizingInformation.isMobile ? 16 : 21;
+      final double titleSize = sizingInformation.isMobile ? 35 : 60;
+      final double descriptionSize = sizingInformation.isMobile ? 16 : 21;
 
       final themeData = Theme.of(context);
-      var screenSize = MediaQuery.of(context).size;
+      final screenSize = MediaQuery.of(context).size;
 
       return Stack(
         children: [
-          Container(
-            child: SizedBox(
-              height: 700,
-              width: screenSize.width,
-              child: Image.asset(
-                'assets/sphere.jpeg',
-                fit: BoxFit.cover,
-              ),
+          SizedBox(
+            height: 700,
+            width: screenSize.width,
+            child: Image.asset(
+              'assets/sphere.jpeg',
+              fit: BoxFit.cover,
             ),
           ),
           Padding(
@@ -37,7 +35,7 @@ class OpenSphereVorstellung extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 600,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,7 +50,7 @@ class OpenSphereVorstellung extends StatelessWidget {
                               color: Colors.white),
                           textAlign: textAlignment,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
                         Text(
@@ -66,7 +64,7 @@ class OpenSphereVorstellung extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Column(
                     children: [
                       Text(
@@ -78,9 +76,9 @@ class OpenSphereVorstellung extends StatelessWidget {
                             color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(
-                          height: 20,
-                        ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       CallToAction(
                         title: 'Check our GitHub',
                         callback: () {

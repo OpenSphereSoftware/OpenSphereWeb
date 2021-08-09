@@ -17,7 +17,7 @@ class ContactColumn extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(
@@ -28,7 +28,7 @@ class ContactColumn extends StatelessWidget {
             fontSize: 16,
           ),
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(
           'max.berktold@opensphere.software',
           style: TextStyle(
@@ -37,7 +37,7 @@ class ContactColumn extends StatelessWidget {
             fontSize: 16,
           ),
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(
           '0176 420 134 86',
           style: TextStyle(

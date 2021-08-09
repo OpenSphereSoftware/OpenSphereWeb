@@ -21,13 +21,13 @@ class ThemeSwitcher extends StatelessWidget {
     final Color textColor = themeData.textTheme.headline1!.color!;
 
     final List<String> values = ["Light", "Dark"];
-    return Container(
+    return SizedBox(
       width: 200,
       height: 30,
       child: Stack(
         children: <Widget>[
           InkWell(
-            onHover: (_){},
+            onHover: (_) {},
             onTap: () {
               Provider.of<AppState>(context, listen: false).toggleTheme();
             },
@@ -41,7 +41,6 @@ class ThemeSwitcher extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
-                      flex: 1,
                       child: Center(
                         child: Text(
                           values[0],
@@ -55,14 +54,13 @@ class ThemeSwitcher extends StatelessWidget {
                       ),
                     ),
                     Expanded(
-                      flex: 1,
                       child: Center(
                         child: Text(
                           values[1],
                           style: TextStyle(
                             fontFamily: "Open Sans",
                             fontSize: 16,
-                             fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w600,
                             color: textColor,
                           ),
                         ),
@@ -72,8 +70,7 @@ class ThemeSwitcher extends StatelessWidget {
             ),
           ),
           InkWell(
-            onHover: (_){},
-            
+            onHover: (_) {},
             onTap: () {
               Provider.of<AppState>(context, listen: false).toggleTheme();
             },
@@ -92,16 +89,16 @@ class ThemeSwitcher extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
+                alignment: Alignment.center,
                 child: Text(
                   !themeProvider.isDarkModeOn ? values[0] : values[1],
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     fontSize: 16,
-                     fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     color: textColor,
                   ),
                 ),
-                alignment: Alignment.center,
               ),
             ),
           )

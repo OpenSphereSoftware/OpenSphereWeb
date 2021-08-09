@@ -15,8 +15,8 @@ class _ThemeAnimatedState extends State<ThemeAnimated>
 
   @override
   void initState() {
-    _animationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+    _animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 300));
     super.initState();
   }
 
@@ -38,14 +38,14 @@ class _ThemeAnimatedState extends State<ThemeAnimated>
             shape: BoxShape.circle,
             gradient: LinearGradient(
                 colors: themeProvider.isDarkModeOn
-                    ? [Color(0xFF8983F7), Color(0xFFA3DAFB)]
-                    : [Color(0xDDFF0080), Color(0xDDFF8C00)],
+                    ? const [Color(0xFF8983F7), Color(0xFFA3DAFB)]
+                    : const [Color(0xDDFF0080), Color(0xDDFF8C00)],
                 begin: Alignment.bottomLeft,
                 end: Alignment.topRight),
           ),
         ),
         Transform.translate(
-          offset: Offset(40, 0),
+          offset: const Offset(40, 0),
           child: ScaleTransition(
             scale: _animationController.drive(
               Tween<double>(begin: 0.0, end: 1.0).chain(
@@ -58,9 +58,7 @@ class _ThemeAnimatedState extends State<ThemeAnimated>
               height: 110,
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: 
-                      Theme.of(context).scaffoldBackgroundColor
-                     ),
+                  color: Theme.of(context).scaffoldBackgroundColor),
             ),
           ),
         )

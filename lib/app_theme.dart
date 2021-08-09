@@ -22,6 +22,7 @@ class AppTheme {
   static  Color _appbarColorLight = Colors.blueGrey.shade900;
   static Color _appbarColorDark = Colors.blueGrey.shade800; //Color(0xFF4f5b62);
 
+  // ignore: unused_field
   static  Color _accentColorLight = Color.fromRGBO(107, 234, 236, 1);
   static  Color _accentColorDark = Color.fromRGBO(74, 217, 217, 1);
 

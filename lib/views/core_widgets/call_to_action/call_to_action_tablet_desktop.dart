@@ -20,6 +20,10 @@ class CallToActionTabletDesktop extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+          decoration: BoxDecoration(
+            color: themeData.colorScheme.secondary,
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Text(
             title,
             style: themeData.textTheme.headline1!.copyWith(
@@ -27,10 +31,6 @@ class CallToActionTabletDesktop extends StatelessWidget {
               color: themeData.colorScheme.primaryVariant,
               fontWeight: FontWeight.w800,
             ),
-          ),
-          decoration: BoxDecoration(
-            color: themeData.colorScheme.secondary,
-            borderRadius: BorderRadius.circular(10),
           ),
         ),
       ),

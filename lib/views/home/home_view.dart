@@ -3,12 +3,10 @@ import 'package:opensphereweb/views/core_widgets/navigation_bar/navbar_talbet_de
 import 'package:opensphereweb/views/core_widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:opensphereweb/views/home/home_content_desktop.dart';
 import 'package:opensphereweb/views/home/home_content_mobile.dart';
-import 'package:opensphereweb/views/home/widgets/centered_view/centered_view.dart';
-import 'package:opensphereweb/views/layout_template/layout_template.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeView extends StatefulWidget {
-  HomeView({Key? key}) : super(key: key);
+  const HomeView({Key? key}) : super(key: key);
 
   @override
   State<HomeView> createState() => _HomeViewState();

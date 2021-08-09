@@ -15,11 +15,10 @@ class Dienstleistung extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
     return Container(
-      constraints: BoxConstraints(minHeight: 600),
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 60),
+      constraints: const BoxConstraints(minHeight: 600),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
       //color: Colors.grey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
@@ -31,7 +30,7 @@ class Dienstleistung extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Text(
@@ -42,7 +41,7 @@ class Dienstleistung extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Text(

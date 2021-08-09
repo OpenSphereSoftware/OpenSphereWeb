@@ -21,7 +21,7 @@ class GetInTouch extends StatelessWidget {
             fontSize: 45,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 35,
         ),
         Text(
@@ -33,7 +33,7 @@ class GetInTouch extends StatelessWidget {
             fontSize: 18,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 40,
         ),
         Text(
@@ -45,18 +45,18 @@ class GetInTouch extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
-        SocialItem(
+        const SocialItem(
             title: 'LinkedIn',
             urlString: 'https://www.linkedin.com/in/max-bertkold-5b742b20a/'),
-        SizedBox(height: 5),
-        SocialItem(
+        const SizedBox(height: 5),
+        const SocialItem(
             title: 'Xing',
             urlString: 'https://www.xing.com/profile/Max_Berktold/cv'),
-        SizedBox(height: 5),
-        SocialItem(
+        const SizedBox(height: 5),
+        const SocialItem(
             title: 'Udemy',
             urlString: 'https://www.udemy.com/user/max-berktold-2/'),
       ],

@@ -11,7 +11,7 @@ class NavigationDrawerHeader extends StatelessWidget {
       alignment: Alignment.center,
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        children: [
+        children: const [
           Text(
             "Skill up now",
             style: TextStyle(

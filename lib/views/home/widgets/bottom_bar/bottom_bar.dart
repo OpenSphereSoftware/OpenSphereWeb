@@ -6,6 +6,9 @@ import 'package:opensphereweb/views/home/widgets/centered_view/centered_view.dar
 import 'package:responsive_builder/responsive_builder.dart';
 
 class BottomBar extends StatelessWidget {
+
+   const BottomBar({ Key? key }) : super(key: key);
+   
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
@@ -16,12 +19,12 @@ class BottomBar extends StatelessWidget {
                 color: Theme.of(context).bottomAppBarColor,
                 child: Column(
                   children: [
-                 GetInTouch(),
-                    SizedBox(
+                    const GetInTouch(),
+                    const SizedBox(
                       height: 20,
                     ),
-                    ContactColumn(),
-                    SizedBox(
+                    const ContactColumn(),
+                    const SizedBox(
                       height: 30,
                     ),
                     Text(
@@ -39,24 +42,23 @@ class BottomBar extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 100,
                       ),
                       Container(
-                        padding: EdgeInsets.only(bottom: 30, top: 50),
+                        padding: const EdgeInsets.only(bottom: 30, top: 50),
                         color: Theme.of(context).bottomAppBarColor,
                         child: CenteredView(
                           child: Column(
                             children: [
                               Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
+                                children: const [
                                   GetInTouch(),
                                   Spacer(),
                                   //ContactColumn()
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 60,
                               ),
                               Text(
@@ -84,11 +86,11 @@ class BottomBar extends StatelessWidget {
                             color: Colors.blueGrey.shade200,
                             borderRadius: BorderRadius.circular(10),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               vertical: 70, horizontal: 70),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text(
                                 "WRITE US",
                                 style: TextStyle(
@@ -167,3 +169,5 @@ class BottomBar extends StatelessWidget {
     );
   }
 }
+
+

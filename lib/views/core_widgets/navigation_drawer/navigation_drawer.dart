@@ -11,13 +11,12 @@ class NavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      decoration: BoxDecoration(
+      decoration:const  BoxDecoration(
           color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
+          boxShadow:  [BoxShadow(color: Colors.black12, blurRadius: 16)]),
       child: Column(
-        children: [
+        children: const [
           NavigationDrawerHeader(),
-          // TODO you can combine both widgets into one layout 
           DrawerItem(icon: Icons.videocam, title: "episodes", navigationPath: ContactRoute,),
           DrawerItem(icon: Icons.help, title: "about", navigationPath: ImprintRoute,)
         ],

@@ -10,7 +10,6 @@ class Karriereschritt extends StatelessWidget {
   Widget build(BuildContext context) {
       final themeData = Theme.of(context);
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           title,
@@ -20,7 +19,7 @@ class Karriereschritt extends StatelessWidget {
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Text(

@@ -11,23 +11,23 @@ class HomeContentDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: const [
 
-        OpenSphereVorstellung(),
+         OpenSphereVorstellung(),
 
-        SizedBox(height: 100,),
+         SizedBox(height: 100,),
 
-        ThemeChooserDesktop(),
+         ThemeChooserDesktop(),
 
-        SizedBox(height: 200,),
+         SizedBox(height: 200,),
 
-        DienstleistungenDesktop(),
+         DienstleistungenDesktop(),
 
-        SizedBox(height: 200,),
+         SizedBox(height: 200,),
 
-        UeberMichDesktop(),
+         UeberMichDesktop(),
 
-        SizedBox(height: 250,),
+         SizedBox(height: 250,),
 
         BottomBar()
 

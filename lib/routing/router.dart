@@ -6,9 +6,9 @@ import 'package:opensphereweb/views/imprint/imprint_view.dart';
 Route<dynamic>? generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
-      return _getPageRoute(HomeView(), HomeRoute);
+      return _getPageRoute(const HomeView(), HomeRoute);
     case ImprintRoute:
-      return _getPageRoute(ImprintView(), ImprintRoute);
+      return _getPageRoute(const ImprintView(), ImprintRoute);
     default:
   }
 }
