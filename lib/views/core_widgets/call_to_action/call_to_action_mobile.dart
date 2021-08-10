@@ -27,19 +27,20 @@ class CallToActionMobile extends StatelessWidget {
 
       child: Material(
         elevation: 6,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(8),
         child: Container(
-          height: 60,
+          height: 50,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: Colors.lightBlue.shade400,
-            borderRadius: BorderRadius.circular(10),
+            color: themeData.colorScheme.secondary,
+            borderRadius: BorderRadius.circular(8),
           ),
           child: Text(
             title,
             style: themeData.textTheme.headline1!.copyWith(
               fontSize: 18,
               fontWeight: FontWeight.w800,
+              color: themeData.colorScheme.primaryVariant,
             ),
           ),
         ),

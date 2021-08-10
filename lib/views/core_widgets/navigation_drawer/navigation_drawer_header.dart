@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:opensphereweb/routing/route_names.dart';
+import 'package:opensphereweb/services/navigation_service.dart';
+
+import '../../../locator.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
   const NavigationDrawerHeader({Key? key}) : super(key: key);
@@ -7,21 +11,14 @@ class NavigationDrawerHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-      color: Colors.lightBlue,
+      color: Theme.of(context).appBarTheme.color,
       alignment: Alignment.center,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: const [
-          Text(
-            "Skill up now",
-            style: TextStyle(
-                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-          Text(
-            "Tap Here",
-            style: TextStyle(color: Colors.white),
-          )
-        ],
+      child: InkWell(
+        onTap: () => locator<NavigationService>().navigateTo(HomeRoute),
+        child: SizedBox(
+          height: 60,
+          child: Image.asset('assets/logo_white.png'),
+        ),
       ),
     );
   }

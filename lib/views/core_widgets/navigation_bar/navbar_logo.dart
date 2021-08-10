@@ -3,6 +3,8 @@ import 'package:opensphereweb/locator.dart';
 import 'package:opensphereweb/routing/route_names.dart';
 import 'package:opensphereweb/services/navigation_service.dart';
 
+// widget extension
+// ignore: directives_ordering
 import 'package:opensphereweb/extensions/hover_extensions.dart';
 
 class NavBarLogo extends StatelessWidget {

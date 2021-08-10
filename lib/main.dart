@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: appState.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
-          home: HomeView(),
+          home: const HomeView(),
           navigatorKey: locator<NavigationService>().navigatorKey,
           onGenerateRoute: generateRoute,
           initialRoute: HomeRoute,

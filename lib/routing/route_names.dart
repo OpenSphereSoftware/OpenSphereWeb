@@ -4,5 +4,3 @@
 const String HomeRoute = "/home";
 // ignore: constant_identifier_names
 const String ImprintRoute = "/impressum";
-// ignore: constant_identifier_names
-const String ContactRoute = "/kontakt";

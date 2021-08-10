@@ -1,28 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:opensphereweb/locator.dart';
 import 'package:opensphereweb/routing/route_names.dart';
+import 'package:opensphereweb/services/navigation_service.dart';
 import 'package:opensphereweb/views/core_widgets/navigation_bar/navbar_item.dart';
 import 'package:opensphereweb/views/core_widgets/navigation_bar/navbar_logo.dart';
 
-class NavBarTabletDesktop extends StatefulWidget {
+class NavBarTabletDesktop extends StatelessWidget {
+  final ScrollController screenScrollController;
   final double opacity;
-
-  const NavBarTabletDesktop(this.opacity);
-
-  @override
-  _NavBarTabletDesktopState createState() => _NavBarTabletDesktopState();
-}
-
-class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
-  final List<bool> _isHovering = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false
-  ];
+  const NavBarTabletDesktop(
+      {Key? key, required this.opacity, required this.screenScrollController})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,90 +19,34 @@ class _NavBarTabletDesktopState extends State<NavBarTabletDesktop> {
     return PreferredSize(
       preferredSize: Size(screenSize.width, 1000),
       child: Container(
-        color:
-            Theme.of(context).appBarTheme.color!.withOpacity(widget.opacity),
+        color: Theme.of(context).appBarTheme.color!.withOpacity(opacity),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 70),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-             const NavBarLogo(),
+              const NavBarLogo(),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  InkWell(
-                    onHover: (value) {
-                      setState(() {
-                        value ? _isHovering[0] = true : _isHovering[0] = false;
-                      });
-                    },
-                    onTap: () {},
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                       const NavBarItem(
-                          title: 'Kontakt',
-                          navigationPath: ContactRoute,
-                        ),
-                        const SizedBox(height: 5),
-                        Visibility(
-                          maintainAnimation: true,
-                          maintainState: true,
-                          maintainSize: true,
-                          visible: _isHovering[0],
-                          child: Container(
-                            height: 2,
-                            width: 30,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    ),
+                  NavBarItem(
+                    title: "Kontakt",
+              
+                    callback: () => screenScrollController.animateTo(
+                        screenScrollController.position.maxScrollExtent,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.ease),
                   ),
                   const SizedBox(
                     width: 60,
                   ),
-                  InkWell(
-                    onHover: (value) {
-                      setState(() {
-                        value ? _isHovering[1] = true : _isHovering[1] = false;
-                      });
-                    },
-                    onTap: () {},
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                       const  NavBarItem(
-                          title: 'Impressum',
-                          navigationPath: ImprintRoute,
-                        ),
-                        const SizedBox(height: 5),
-                        Visibility(
-                          maintainAnimation: true,
-                          maintainState: true,
-                          maintainSize: true,
-                          visible: _isHovering[1],
-                          child: Container(
-                            height: 2,
-                            width: 30,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    ),
+                  NavBarItem(
+                    title: 'Impressum',
+                 
+                    callback: () => locator<NavigationService>().navigateTo(ImprintRoute),
                   ),
                 ],
               ),
-              /*Text(
-                'OPENSPHERE',
-                style: TextStyle(
-                  color: Colors.blueGrey[100],
-                  fontSize: 20,
-                  fontFamily: 'Open Sans',
-                  fontWeight: FontWeight.w400,
-                  letterSpacing: 3,
-                ),
-              ),*/
             ],
           ),
         ),

@@ -3,6 +3,7 @@ import 'package:opensphereweb/app_state.dart';
 import 'package:provider/provider.dart';
 
 //extension
+// ignore: directives_ordering
 import 'package:opensphereweb/extensions/hover_extensions.dart';
 
 class ThemeSwitcher extends StatelessWidget {

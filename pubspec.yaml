@@ -35,6 +35,7 @@ flutter:
     - assets/consulting.jpeg
     - assets/profilbild.jpeg
     - assets/sphere.jpeg
+    - assets/sphere2.jpeg
 
   fonts:
     - family: Open Sans

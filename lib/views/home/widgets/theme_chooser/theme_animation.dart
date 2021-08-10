@@ -58,7 +58,7 @@ class _ThemeAnimatedState extends State<ThemeAnimated>
               height: 110,
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Theme.of(context).scaffoldBackgroundColor),
+                  color: themeProvider.isDarkModeOn? Theme.of(context).appBarTheme.color:Colors.white),
             ),
           ),
         )

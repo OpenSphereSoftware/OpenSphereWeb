@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:opensphereweb/views/core_widgets/call_to_action/call_to_action.dart';
-import 'package:opensphereweb/views/home/widgets/centered_view/centered_view.dart';
+import 'package:opensphereweb/views/core_widgets/centered_view/centered_view.dart';
 import 'package:opensphereweb/views/home/widgets/dienstleistungen/dienstleistung.dart';
 import 'package:opensphereweb/views/home/widgets/dienstleistungen/dienstleistung_beschreibung.dart';
 import 'package:opensphereweb/views/home/widgets/dienstleistungen/dienstleistung_img.dart';
 
 class DienstleistungenDesktop extends StatelessWidget {
-  const DienstleistungenDesktop({Key? key}) : super(key: key);
+  final ScrollController screenScrollController;
+  const DienstleistungenDesktop(
+      {Key? key, required this.screenScrollController})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return CenteredView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const DienstleistungBeschreibung(
@@ -76,7 +78,11 @@ class DienstleistungenDesktop extends StatelessWidget {
           CallToAction(
             title: 'GET IN TOUCH',
             callback: () {
-              // todo navigate to get in touch
+              // todo implement in bloc/prvider state management
+              screenScrollController.animateTo(
+                  screenScrollController.position.maxScrollExtent,
+                  duration: const Duration(seconds: 1),
+                  curve: Curves.ease);
             },
           )
         ],
