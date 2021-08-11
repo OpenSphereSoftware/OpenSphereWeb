@@ -1,3 +1,4 @@
+import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:opensphereweb/views/core_widgets/call_to_action/call_to_action.dart';
 import 'package:opensphereweb/views/core_widgets/centered_view/centered_view.dart';
@@ -28,30 +29,27 @@ class DienstleistungenMobile extends StatelessWidget {
           const SizedBox(
             height: 100,
           ),
-          SizedBox(
-            height: sizingInformation.isMobile ? 850 : 700,
-            child: PageView(
-                controller: PageController(viewportFraction: 0.8),
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(right: 20),
-                    child: DienstleistungMobile(
-                      imgPath: "assets/development.jpeg",
-                      title: 'DEVELOPMENT',
-                      subtitle: "Umsetzung Ihrer Vision",
-                      text:
-                          "Wir sind Spezialisten für die Entwicklung von state-of-the-art Cross Plattform Mobile Applications mit dem Flutter Framework. Zusammen erarbeiten wir ein lückenloses Konzept und Design, das zur bestmöglichen User Experience führt. Durch die Verwendung des Flutter Frameworks sparen wir Ihnen wertvolle Entwicklungszeit, da wir mit einer Codebasis für Android und iOS zugleich entwickeln. Ob Tablet oder Smartphone, ob Software für Techniker oder für Endkunden, wir entwickeln maßgeschneiderte Lösungen für Ihre Bedürfnisse. Dabei legen wir Wert auf eine skalierbare Softwarearchitektur und eine saubere Implementierung.",
-                    ),
-                  ),
-                  DienstleistungMobile(
-                    imgPath: "assets/consulting.jpeg",
-                    title: 'CONSULTANCY',
-                    subtitle: 'Eine klare Ausrichtung',
+          ExpandablePageView(
+              controller: PageController(viewportFraction: 0.95),
+              children: const [
+                Padding(
+                  padding: EdgeInsets.only(right: 20),
+                  child: DienstleistungMobile(
+                    imgPath: "assets/development.jpeg",
+                    title: 'DEVELOPMENT',
+                    subtitle: "Umsetzung Ihrer Vision",
                     text:
-                        'Wir unterstützen Ihr Entwicklerteam gerne bei der Umsetzung Ihrer Ideen. Wir bieten eine lückenlose Konzept-, sowie Backlogerstellung, welche als Fundament und klare Ausrichtung für Ihr Projekt fungiert. Von einer Einführung in das Flutter Framework, das Erstellen einer stabilen Architektur, bis hin zur Designerstellung und Implementierung der Software, bieten wir alles, um Ihr Projekt zum Erfolg zu führen.',
+                        "Wir sind Spezialisten für die Entwicklung von state-of-the-art Cross Plattform Mobile Applications mit dem Flutter Framework. Zusammen erarbeiten wir ein lückenloses Konzept und Design, das zur bestmöglichen User Experience führt. Durch die Verwendung des Flutter Frameworks sparen wir Ihnen wertvolle Entwicklungszeit, da wir mit einer Codebasis für Android und iOS zugleich entwickeln. Ob Tablet oder Smartphone, ob Software für Techniker oder für Endkunden, wir entwickeln maßgeschneiderte Lösungen für Ihre Bedürfnisse. Dabei legen wir Wert auf eine skalierbare Softwarearchitektur und eine saubere Implementierung.",
                   ),
-                ]),
-          ),
+                ),
+                DienstleistungMobile(
+                  imgPath: "assets/consulting.jpeg",
+                  title: 'CONSULTANCY',
+                  subtitle: 'Eine klare Ausrichtung',
+                  text:
+                      'Wir unterstützen Ihr Entwicklerteam gerne bei der Umsetzung Ihrer Ideen. Wir bieten eine lückenlose Konzept-, sowie Backlogerstellung, welche als Fundament und klare Ausrichtung für Ihr Projekt fungiert. Von einer Einführung in das Flutter Framework, das Erstellen einer stabilen Architektur, bis hin zur Designerstellung und Implementierung der Software, bieten wir alles, um Ihr Projekt zum Erfolg zu führen.',
+                ),
+              ]),
           const SizedBox(
             height: 80,
           ),

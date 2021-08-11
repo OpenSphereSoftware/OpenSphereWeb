@@ -24,7 +24,7 @@ class DienstleistungBeschreibung extends StatelessWidget {
             title,
             style: themeData.textTheme.headline1!.copyWith(
               fontWeight: FontWeight.w600,
-              height: 0.9,
+              height: 1,
               fontSize: 35,
             ),
             textAlign: TextAlign.center,
@@ -35,7 +35,7 @@ class DienstleistungBeschreibung extends StatelessWidget {
           Text(
             subtitle,
             style: themeData.textTheme.bodyText1!.copyWith(
-              height: 0.9,
+              height: 1.2,
               fontSize: 18,
             ),
             textAlign: TextAlign.center,

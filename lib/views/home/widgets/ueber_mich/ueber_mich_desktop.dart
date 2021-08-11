@@ -23,7 +23,7 @@ class UeberMichDesktop extends StatelessWidget {
               "Über mich",
               style: themeData.textTheme.headline1!.copyWith(
                 fontWeight: FontWeight.bold,
-                height: 0.9,
+                height: 1,
                 fontSize: 35,
               ),
               textAlign: TextAlign.center,
@@ -34,7 +34,7 @@ class UeberMichDesktop extends StatelessWidget {
             Text(
               "Max Berktold  -  Inhaber OpenSphere Software",
               style: themeData.textTheme.bodyText1!.copyWith(
-                height: 0.9,
+                height: 1.2,
                 fontSize: 18,
               ),
               textAlign: TextAlign.center,

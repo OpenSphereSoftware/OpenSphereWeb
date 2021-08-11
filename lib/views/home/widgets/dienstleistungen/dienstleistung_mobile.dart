@@ -20,7 +20,7 @@ class DienstleistungMobile extends StatelessWidget {
     final themeData = Theme.of(context);
     final screenSize = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 40),
+      padding: const EdgeInsets.only(bottom: 60, top: 20),
       child: Material(
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(15),
@@ -35,17 +35,18 @@ class DienstleistungMobile extends StatelessWidget {
                   : Colors.white,
             ),
             child: Column(
-              mainAxisSize: MainAxisSize.min,
               children: [
                 Stack(
                   children: [
                     Container(
-                      width: screenSize.width - 80,
+                      
+                     constraints: const BoxConstraints(minWidth: double.infinity),
                       height: 250,
-                      decoration: BoxDecoration(
+                      /*decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Colors.transparent),
+                          color: Colors.transparent),*/
                       child: ClipRRect(
+                        
                         borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(15),
                             topRight: Radius.circular(15)),
