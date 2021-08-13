@@ -19,7 +19,7 @@ class ContactColumn extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Text(
+        SelectableText(
           'Stiberstr. 13, 96114 Hirschaid, Deutschland',
           style: TextStyle(
             fontFamily: "Open Sans",
@@ -28,7 +28,7 @@ class ContactColumn extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 5),
-        Text(
+        SelectableText(
           'max.berktold@opensphere.software',
           style: TextStyle(
             fontFamily: "Open Sans",
@@ -37,7 +37,7 @@ class ContactColumn extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 5),
-        Text(
+        SelectableText(
           '0176 420 134 86',
           style: TextStyle(
             fontFamily: "Open Sans",

@@ -21,7 +21,7 @@ class ContactBox extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  "WRITE US",
+                  "write us",
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     color: Colors.black,
@@ -33,7 +33,7 @@ class ContactBox extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Text(
+                SelectableText(
                   "max.berktold@opensphere.software",
                   style:
                       TextStyle(fontSize: 16, height: 1.7, color: Colors.black),
@@ -42,7 +42,7 @@ class ContactBox extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  "CALL US",
+                  "call us",
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     color: Colors.black,
@@ -54,7 +54,7 @@ class ContactBox extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Text(
+                SelectableText(
                   "0176 420 134 86",
                   style:
                       TextStyle(fontSize: 16, height: 1.7, color: Colors.black),
@@ -63,7 +63,7 @@ class ContactBox extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  "LOCATION",
+                  "meet us",
                   style: TextStyle(
                     fontFamily: "Open Sans",
                     color: Colors.black,
@@ -75,7 +75,7 @@ class ContactBox extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Text("Stiberstraße 13\n96114 Hirschaid, Deutschland",
+                SelectableText("Stiberstraße 13\n96114 Hirschaid, Deutschland",
                     style: TextStyle(
                         fontSize: 16, height: 1.7, color: Colors.black),
                     textAlign: TextAlign.center)

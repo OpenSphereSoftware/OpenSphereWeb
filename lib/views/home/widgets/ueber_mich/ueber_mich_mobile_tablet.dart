@@ -68,7 +68,7 @@ class UeberMichMobileTablet extends StatelessWidget {
             const Karriereschritt(
                 title: "OpenSphere Software",
                 text:
-                    "Die Erfahrungen mit meiner nebenberuflichen Selbständigkeit und der Wunsch mein eigener Chef zu sein, führten schlussendlich zur Gründung von OpenSphere Software. Wir sind Spezialisten für die Entwicklung von Mobile Apps mit dem Flutter Framework und suchen spannende Projekte und Herausforderungen. Gerne unterstütze wir Sie bei der Umsetzung Ihrer Vision. Sollten wir Ihr Interesse geweckt haben, freuen wir uns auf Ihre Kontaktaufnahme!"),
+                    "Die Erfahrungen mit meiner nebenberuflichen Selbständigkeit und der Wunsch mein eigener Chef zu sein, führten schlussendlich zur Gründung von OpenSphere Software. Wir sind Spezialisten für die Entwicklung von Mobile Apps mit dem Flutter Framework und suchen spannende Projekte und Herausforderungen. Gerne unterstützen wir Sie bei der Umsetzung Ihrer Vision. Sollten wir Ihr Interesse geweckt haben, freuen wir uns auf Ihre Kontaktaufnahme!"),
           ],
         ),
       ),

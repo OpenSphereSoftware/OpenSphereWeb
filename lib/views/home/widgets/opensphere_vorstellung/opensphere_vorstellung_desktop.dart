@@ -65,7 +65,7 @@ class OpenSphereVorstellungDesktop extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      'This Website is build\nusing the Flutter Framework!',
+                      'This Website is built\nusing the Flutter Framework!',
                       style: themeData.textTheme.headline1!.copyWith(
                           fontSize: descriptionSize,
                           height: 1.7,
