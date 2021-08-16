@@ -32,7 +32,7 @@ workflows:
       - flutter build web --release
       - cd build/web
       - 7z a -r ../web.zip ./*
-      - lftp -e "mirror -R build/web ." sftp://opensphere.software:$masterpw@ssh.strato.de:/testdir 
+      - lftp -e "mirror -R build/web ." sftp://opensphere.software:$masterpw@ssh.strato.de:/opensphere 
     artifacts:
       - build/web.zip
       - flutter_drive.log
