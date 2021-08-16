@@ -26,7 +26,7 @@ workflows:
     scripts:
       - brew pin python3
       - brew install lftp
-      - brew install inetutils &>/dev/null
+      - sudo brew install inetutils
       - flutter packages pub get
       - flutter config --enable-web
       - flutter build web --release
