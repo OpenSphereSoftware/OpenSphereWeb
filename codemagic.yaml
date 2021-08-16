@@ -22,13 +22,13 @@ workflows:
         - pattern: '*'
           include: true
     scripts:
+      - brew install lftp
+      - brew install sftp
       - flutter packages pub get
       - flutter config --enable-web
-      - |
-        # build web
-        flutter build web --release
-        cd build/web
-        7z a -r ../web.zip ./*
+      - flutter build web --release
+      - cd build/web
+      - 7z a -r ../web.zip ./*
     artifacts:
       - build/web.zip
       - flutter_drive.log
