@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:opensphereweb/views/core_widgets/bottom_bar/social_item.dart';
+import 'package:opensphereweb/presentation/views/core/bottom_bar/social_item.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class GetInTouch extends StatelessWidget {

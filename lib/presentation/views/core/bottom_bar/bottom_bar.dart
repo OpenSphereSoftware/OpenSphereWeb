@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:opensphereweb/views/core_widgets/bottom_bar/bottem_bar_mobile_tablet.dart';
-import 'package:opensphereweb/views/core_widgets/bottom_bar/bottom_bar_desktop.dart';
+import 'package:opensphereweb/presentation/views/core/bottom_bar/bottem_bar_mobile_tablet.dart';
+import 'package:opensphereweb/presentation/views/core/bottom_bar/bottom_bar_desktop.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class BottomBar extends StatelessWidget {
