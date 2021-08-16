@@ -1,7 +1,7 @@
 
 
 import 'package:get_it/get_it.dart';
-import 'package:opensphereweb/services/navigation_service.dart';
+import 'package:opensphereweb/application/navigation/navigation_service.dart';
 
 GetIt locator = GetIt.instance;
 

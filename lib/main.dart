@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:opensphereweb/application/navigation/navigation_service.dart';
 import 'package:opensphereweb/locator.dart';
-import 'package:opensphereweb/routing/route_names.dart';
-import 'package:opensphereweb/routing/router.dart';
-import 'package:opensphereweb/services/navigation_service.dart';
-import 'package:opensphereweb/views/home/home_view.dart';
+import 'package:opensphereweb/presentation/routing/route_names.dart';
+import 'package:opensphereweb/presentation/routing/router.dart';
+import 'package:opensphereweb/presentation/views/home/home_view.dart';
 import 'package:provider/provider.dart';
 
-import 'app_state.dart';
-import 'app_theme.dart';
+import 'application/theme/theme_service.dart';
+import 'presentation/theme/theme.dart';
 
 void main() {
   setupLocator();
   runApp(
-    ChangeNotifierProvider<AppState>(
-      create: (context) => AppState(),
+    ChangeNotifierProvider<ThemeService>(
+      create: (context) => ThemeService(),
       child: MyApp(),
     ),
   );
@@ -22,7 +22,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Consumer<AppState>(
+    return Consumer<ThemeService>(
       builder: (context, appState, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
