@@ -4,7 +4,7 @@
 import 'dart:html' as  html;
 
 import 'package:flutter/material.dart';
-import 'package:opensphereweb/presentation/extensions/on_hover/translate_on_hover.dart';
+import 'package:opensphereweb/presentation/routing/translate_on_hover.dart';
 
 extension HoverExtensions on Widget {
 
