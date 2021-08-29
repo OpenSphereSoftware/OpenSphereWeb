@@ -16,10 +16,10 @@ class NavBarLogo extends StatelessWidget {
       hoverColor: Colors.transparent,
       onHover: (_) {},
       onTap: () => locator<NavigationService>().navigateTo(HomeRoute),
-      child: SizedBox(
-        height: 40,
-        child:  Image.asset('assets/logo_white.png'),
-      ),
+      child: SizedBox(height: 40, child: Image.asset('assets/logo_white.png')
+
+          //
+          ),
     ).showCurserOnHover.moveUpOnHover;
   }
 }

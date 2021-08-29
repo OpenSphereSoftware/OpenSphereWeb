@@ -30,13 +30,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/logo.png
-    - assets/logo_white.png
-    - assets/development.jpeg
-    - assets/consulting.jpeg
-    - assets/profilbild.jpeg
-    - assets/sphere.jpeg
-    - assets/sphere2.jpeg
+    - assets/
 
   fonts:
     - family: Open Sans
