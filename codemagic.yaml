@@ -24,7 +24,7 @@ workflows:
         - pattern: '*'
           include: true
     scripts:
-      - brew pin python3
+      #- brew pin python3
       - brew install lftp
       - brew install inetutils --ignore-dependencies
       - flutter packages pub get
