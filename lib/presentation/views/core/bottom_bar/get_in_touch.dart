@@ -62,7 +62,7 @@ class GetInTouch extends StatelessWidget {
             const SizedBox(height: 5),
             const SocialItem(
                 title: 'Udemy',
-                urlString: 'https://www.udemy.com/user/max-berktold-2/'),
+                urlString: 'https://www.udemy.com/course/dart-flutter-leicht-gemacht/?referralCode=5896E52EDB9608456452'),
           ],
         );
       }

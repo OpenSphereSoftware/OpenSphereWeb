@@ -6,6 +6,7 @@ class ContactBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeData = Theme.of(context);
     return CenteredView(
       child: Align(
         alignment: Alignment.topRight,
@@ -19,65 +20,61 @@ class ContactBox extends StatelessWidget {
             ),
             padding: const EdgeInsets.symmetric(vertical: 70, horizontal: 70),
             child: Column(
-              children: const [
-                Text(
-                  "write us",
-                  style: TextStyle(
-                    fontFamily: "Open Sans",
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    height: 1.2,
-                    fontSize: 18,
-                  ),
-                ),
-                SizedBox(
+              children: [
+                Text("write us",
+                    style: themeData.textTheme.bodyText1!.copyWith(
+                      fontWeight: FontWeight.bold,
+                      height: 1.2,
+                      fontSize: 18,
+                    )),
+                const SizedBox(
                   height: 15,
                 ),
                 SelectableText(
                   "max.berktold@opensphere.software",
-                  style:
-                      TextStyle(fontSize: 16, height: 1.7, color: Colors.black),
+                  style: themeData.textTheme.bodyText1!.copyWith(
+                    fontSize: 16,
+                    height: 1.7,
+                  ),
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 Text(
                   "call us",
-                  style: TextStyle(
-                    fontFamily: "Open Sans",
-                    color: Colors.black,
+                  style: themeData.textTheme.bodyText1!.copyWith(
                     fontWeight: FontWeight.bold,
                     height: 1.2,
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 SelectableText(
                   "0176 420 134 86",
-                  style:
-                      TextStyle(fontSize: 16, height: 1.7, color: Colors.black),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  "meet us",
-                  style: TextStyle(
-                    fontFamily: "Open Sans",
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    height: 1.2,
-                    fontSize: 18,
+                  style: themeData.textTheme.bodyText1!.copyWith(
+                    fontSize: 16,
+                    height: 1.7,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
+                  height: 20,
+                ),
+                Text("meet us",
+                    style: themeData.textTheme.bodyText1!.copyWith(
+                      fontWeight: FontWeight.bold,
+                      height: 1.2,
+                      fontSize: 18,
+                    )),
+                const SizedBox(
                   height: 15,
                 ),
                 SelectableText("Stiberstraße 13\n96114 Hirschaid, Deutschland",
-                    style: TextStyle(
-                        fontSize: 16, height: 1.7, color: Colors.black),
+                    style: themeData.textTheme.bodyText1!.copyWith(
+                      fontSize: 16,
+                      height: 1.7,
+                    ),
                     textAlign: TextAlign.center)
               ],
             ),

@@ -19,7 +19,7 @@ class AppTheme {
   static  final Color _darkOnPrimaryColor = Colors.blueGrey.shade300;
   static  const Color _darkTextColorPrimary = Colors.white;
   static  final Color _darkTextColorSecondary = Colors.blueGrey.shade200;
-  static final  Color _darkSurfaceColor = _darkOnPrimaryColor;
+  static final  Color _darkSurfaceColor = Colors.blueGrey;
 
   static  final Color _appbarColorLight = Colors.blueGrey.shade900;
   static final Color _appbarColorDark = Colors.blueGrey.shade800; //Color(0xFF4f5b62);
