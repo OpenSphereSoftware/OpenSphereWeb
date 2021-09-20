@@ -79,7 +79,7 @@ class Imprint extends StatelessWidget {
               height: 40,
             ),
             Text(
-              "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: 96 575 248 109",
+              "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE329821920",
               style: themeData.textTheme.bodyText2!.copyWith(
                 fontSize: textSize,
                 height: 1.7,
